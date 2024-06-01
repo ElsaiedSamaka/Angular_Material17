@@ -16,6 +16,7 @@ import {
   TranslateService,
 } from '@ngx-translate/core';
 import { HttpTokenInterceptor } from '../core/intereceptors/Http-token-interceptor';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 // I18n support with ngx-translate (https://www.npmjs.com/package/@ngx-translate/http-loader)
 export function HttpLoaderFactory(http: HttpClient) {
@@ -43,7 +44,7 @@ export const appConfig: ApplicationConfig = {
       provide: HTTP_INTERCEPTORS,
       useClass: HttpTokenInterceptor,
       multi: true,
-    },
+    }, provideAnimationsAsync(),
   ],
 };
 // Usage example:

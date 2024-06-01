@@ -1,21 +1,31 @@
 {
   "name": "eden-material",
   "version": "0.0.0",
+  "description": "Customer Care System Front End Client",
+  "author": "EDEN TECHNOLOGY",
+  "license": "UNLICENSED",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Eden-material": "node dist/eden-material/server/server.mjs"
+    "serve:ssr:Eden-material": "node dist/eden-material/server/server.mjs",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "npx eslint --fix .",
+    "prettier": "npx prettier --check . ",
+    "prettier:fix": "npx prettier --write . ",
+    "format": "npm run prettier:fix && npm run lint:fix"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.3.0",
+    "@angular/cdk": "^18.0.1",
     "@angular/common": "^17.3.0",
     "@angular/compiler": "^17.3.0",
     "@angular/core": "^17.3.0",
     "@angular/forms": "^17.3.0",
+    "@angular/material": "^18.0.1",
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/platform-server": "^17.3.0",

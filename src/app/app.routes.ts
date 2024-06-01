@@ -1,22 +1,11 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  // {
-  //     path: 'index',
-  //    title: 'Home',
-  //     loadChildren: () =>
-  //         import('./index/index.module').then((m) => m.IndexModule),
-  // },
   {
     path: '',
-    redirectTo: 'index',
-    pathMatch: 'full',
+    loadChildren: () =>
+      import('./shared/layout/wrapper/wrapper.module').then(
+        (m) => m.WrapperModule
+      ),
   },
-  {
-    path: '**',
-    redirectTo: 'index',
-    pathMatch: 'full',
-  },
-
-  // { path: '**', component: PageNotFoundComponent },
 ];
