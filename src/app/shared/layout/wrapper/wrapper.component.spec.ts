@@ -11,9 +11,8 @@ describe('WrapperComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WrapperComponent ]
-    })
-    .compileComponents();
+      declarations: [WrapperComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

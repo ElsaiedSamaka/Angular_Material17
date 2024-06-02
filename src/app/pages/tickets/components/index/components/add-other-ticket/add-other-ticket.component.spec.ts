@@ -11,9 +11,8 @@ describe('AddOtherTicketComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddOtherTicketComponent ]
-    })
-    .compileComponents();
+      declarations: [AddOtherTicketComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

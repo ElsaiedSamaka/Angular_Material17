@@ -1,5 +1,11 @@
-<main>
+<section class="wrapper bg-cyan-400">
   <app-nav-bar></app-nav-bar>
   <app-side-nav></app-side-nav>
-  <router-outlet></router-outlet>
-</main>
+  <!-- <div class="mt-16 ml-72 h-[99vh] bg-red-500">
+        test
+    <router-outlet></router-outlet>
+  </div> -->
+  <div id="content" class="mt-20 ml-72 h-[99vh] bg-red-500">
+    <ng-content select="[page-content]"></ng-content>
+  </div>
+</section>

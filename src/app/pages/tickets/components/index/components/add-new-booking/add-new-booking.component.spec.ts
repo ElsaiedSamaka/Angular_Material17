@@ -11,9 +11,8 @@ describe('AddNewBookingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddNewBookingComponent ]
-    })
-    .compileComponents();
+      declarations: [AddNewBookingComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

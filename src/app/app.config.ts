@@ -44,7 +44,8 @@ export const appConfig: ApplicationConfig = {
       provide: HTTP_INTERCEPTORS,
       useClass: HttpTokenInterceptor,
       multi: true,
-    }, provideAnimationsAsync(),
+    },
+    provideAnimationsAsync(),
   ],
 };
 // Usage example:

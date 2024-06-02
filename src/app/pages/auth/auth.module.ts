@@ -9,12 +9,7 @@ import { RtlltrDirective } from '../../../core/directives/rtlltr.directive';
 import { ViewsModule } from './views/views.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ViewsModule,
-    ReactiveFormsModule,
-    AuthRoutingModule,
-  ],
+  imports: [CommonModule, ViewsModule, ReactiveFormsModule, AuthRoutingModule],
   declarations: [SigninComponent, SignupComponent, SignoutComponent],
   providers: [RtlltrDirective],
 })

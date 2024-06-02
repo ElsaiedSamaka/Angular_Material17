@@ -11,9 +11,8 @@ describe('AddNewCitationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddNewCitationComponent ]
-    })
-    .compileComponents();
+      declarations: [AddNewCitationComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

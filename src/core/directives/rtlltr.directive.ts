@@ -7,7 +7,7 @@ import { LanguageService } from '../services/language.service';
 export class RtlltrDirective implements OnInit {
   constructor(
     private elementRef: ElementRef,
-    private languageService: LanguageService // Replace with your language service
+    private languageService: LanguageService, // Replace with your language service
   ) {}
 
   ngOnInit() {

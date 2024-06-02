@@ -5,7 +5,7 @@ export const routes: Routes = [
     path: '',
     loadChildren: () =>
       import('./shared/layout/wrapper/wrapper.module').then(
-        (m) => m.WrapperModule
+        (m) => m.WrapperModule,
       ),
   },
 ];

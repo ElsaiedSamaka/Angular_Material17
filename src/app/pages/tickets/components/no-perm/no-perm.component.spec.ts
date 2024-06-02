@@ -11,9 +11,8 @@ describe('NoPermComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NoPermComponent ]
-    })
-    .compileComponents();
+      declarations: [NoPermComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

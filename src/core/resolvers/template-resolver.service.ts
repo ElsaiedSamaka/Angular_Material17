@@ -14,7 +14,7 @@ import { TemplateService } from '../services/template.service';
 export class TemplateResolverService implements Resolve<any> {
   constructor(
     private router: Router,
-    private templateService: TemplateService
+    private templateService: TemplateService,
   ) {}
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     const { id } = route.params;
@@ -23,7 +23,7 @@ export class TemplateResolverService implements Resolve<any> {
         console.log('error issued with template resolver', err);
         this.router.navigateByUrl('index/not-found');
         return EMPTY;
-      })
+      }),
     );
   }
 }

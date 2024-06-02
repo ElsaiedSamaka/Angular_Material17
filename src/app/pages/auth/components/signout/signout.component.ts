@@ -11,11 +11,7 @@ import { Router } from '@angular/router';
 export class SignoutComponent implements OnInit {
   showLoader: boolean = false;
 
-  constructor(
-    // private authService: AuthService,
-    // private loadingService: LoadingService,
-    // private router: Router
-  ) {}
+  constructor() {} // private router: Router // private loadingService: LoadingService, // private authService: AuthService,
 
   ngOnInit() {
     // this.loadingService.loading$.next(true);

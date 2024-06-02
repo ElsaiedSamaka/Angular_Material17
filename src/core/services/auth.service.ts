@@ -37,7 +37,7 @@ export class AuthService {
     lastname: string,
     nationalID: string,
     email: string,
-    experienceYears:number,
+    experienceYears: number,
     phonenumber: string,
     biography: string,
     birthdate: any,
@@ -46,8 +46,8 @@ export class AuthService {
     programingLanguages: any[],
     password: string,
     passwordConfirmation: string,
-    userType:string,
-    rememberMe: boolean
+    userType: string,
+    rememberMe: boolean,
   ) {
     return this.http
       .post<any>(
@@ -57,25 +57,25 @@ export class AuthService {
           lastname: lastname,
           nationalID: nationalID,
           email: email,
-          experienceYears:experienceYears,
+          experienceYears: experienceYears,
           phonenumber: phonenumber,
           biography: biography,
           birthdate: birthdate,
           city: city,
           experienceLevel: experienceLevel,
-          programingLanguages:programingLanguages,
+          programingLanguages: programingLanguages,
           password: password,
           passwordConfirmation: passwordConfirmation,
-          userType:userType,
+          userType: userType,
           rememberMe: rememberMe,
         },
-        { withCredentials: true }
+        { withCredentials: true },
       )
       .pipe(
         tap((newUser) => {
           this.signedin$.next(true);
           this.setCurrentUser(newUser);
-        })
+        }),
       );
   }
   // checkAuth will be called whenever our app component is initialized
@@ -84,7 +84,7 @@ export class AuthService {
     return this.http.get<any>(`${this.api_url}/api/auth/signedin`).pipe(
       tap(({ authentication }) => {
         this.signedin$.next(authentication);
-      })
+      }),
     );
   }
   // signout will be called when the user clicks the signout button
@@ -94,7 +94,7 @@ export class AuthService {
       tap(() => {
         this.signedin$.next(false);
         this.setCurrentUser(null);
-      })
+      }),
     );
   }
   // signin will be called when the user submits the signin form
@@ -108,13 +108,13 @@ export class AuthService {
           password: password,
           rememberMe: rememberMe,
         },
-        { withCredentials: true }
+        { withCredentials: true },
       )
       .pipe(
         tap((existingUser) => {
           this.signedin$.next(true);
           this.setCurrentUser(existingUser);
-        })
+        }),
       );
   }
   // update password
@@ -132,7 +132,7 @@ export class AuthService {
       .pipe(
         tap((updatedUser) => {
           this.setCurrentUser(updatedUser);
-        })
+        }),
       );
   }
   googleLogin() {
@@ -143,7 +143,7 @@ export class AuthService {
     return this.http.get(`${this.api_url}/api/auth/facebook`).pipe(
       tap(() => {
         this.signedin$.next(true);
-      })
+      }),
     );
   }
 }

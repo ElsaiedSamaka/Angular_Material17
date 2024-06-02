@@ -31,11 +31,8 @@ export class SigninComponent implements OnInit {
   //   ]),
   //   rememberMe: new FormControl(false),
   // });
-  constructor() // private themeService: ThemeService,
-  // private authService: AuthService,
-  // private loadingService: LoadingService,
-  // private router: Router
-  {
+  constructor() {
+    // private router: Router // private loadingService: LoadingService, // private authService: AuthService, // private themeService: ThemeService,
     // this.getCurrentTheme();
   }
 

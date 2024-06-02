@@ -11,9 +11,8 @@ describe('AddNewPackageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddNewPackageComponent ]
-    })
-    .compileComponents();
+      declarations: [AddNewPackageComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
