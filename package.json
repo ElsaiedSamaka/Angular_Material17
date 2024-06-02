@@ -11,11 +11,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:Eden-material": "node dist/eden-material/server/server.mjs",
-    "lint": "npx eslint . --max-warnings 0",
-    "lint:fix": "npx eslint --fix .",
     "prettier": "npx prettier --check . ",
     "prettier:fix": "npx prettier --write . ",
-    "format": "npm run prettier:fix && npm run lint:fix"
+    "format": "npm run prettier:fix"
   },
   "private": true,
   "dependencies": {
@@ -61,6 +59,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
-    "typescript": "~5.4.2"
+    "typescript": "~5.4.2",
+    "typescript-eslint": "^7.11.0"
   }
 }

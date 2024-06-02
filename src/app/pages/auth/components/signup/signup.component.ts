@@ -78,8 +78,7 @@ export class SignupComponent implements OnInit {
   //   },
   //   { validators: [this.matchPassword.validate], updateOn: 'change' }
   // );
-  constructor() // private router: Router // private loadingService: LoadingService, // private themeService: ThemeService, // private authService: AuthService, // private matchPassword: MatchPassword,
-  {
+  constructor() { // private router: Router // private loadingService: LoadingService, // private themeService: ThemeService, // private authService: AuthService, // private matchPassword: MatchPassword,
     this.getCurrentTheme();
   }
   onSubmit() {
